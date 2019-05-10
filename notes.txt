@@ -1,0 +1,16 @@
+## Issue Tracker App - Plain Javascript
+This is a very basic single form project to create issues for an application.
+It uses plain Javascript, Chance.js to generate random data that suits for testing purpose, bootstrap, 
+live-server that supports hot module replacement and shows the changes in the browser without refreshing it.
+
+To run the application with HMR viz Hot Module Replacement, install "live-server" with npm first.
+```
+npm install -g live-server
+```
+
+Then simply in the project directory, enter the below command 
+```
+live-server
+```
+
+Lot of modifications yet to be done.

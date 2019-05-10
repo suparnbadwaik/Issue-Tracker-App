@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Issue Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container">
+        <h3>Issue Tracker <small>by SSB</small></h3>
+
+        <div class="jumbotron">
+            <h3>Add New Issue</h3>
+
+            <form id="frmIssue">
+                <div class="form-group">
+                    <label for="issueDescription">Description</label>
+                    <input type="text" class="form-control" id="issueDescription" name="issueDescription" placeholder="Enter short description of the issue">
+                </div>
+                <div class="form-group">
+                    <label for="issueSeverity">Severity</label>
+                    <select name="issueSeverity" id="issueSeverity" class="form-control">
+                        <option value="Low">Low - Can be delayed till a higher priority comes in</option>
+                        <option value="Medium">Medium - Must look into it and solve it ASAP</option>
+                        <option value="High">High - Severe issue that must be started now</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="issueAssignedTo">Assigned To</label>
+                    <input type="text" class="form-control" id="issueAssignedTo" placeholder="Enter name of the team member the issue be assigned to">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Issue</button>
+                <a class="btn btn-danger" onclick="deleteAllIssues('issueList')">Delete All Issues</a>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="issuesList"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy SSB</p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="http://chancejs.com/chance.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
